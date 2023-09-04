@@ -172,8 +172,29 @@ def main():
     shots = 1024
     # run the search algorithm
     counts = search(n, m, backend, shots)
+    # visualize the circuit
+    visualize(create_circuit())
     # print the results
     print(counts)
+
+
+def visualize(circuit):
+    circuit.draw(output='mpl')
+    plt.show()
+
+
+def create_circuit():
+    # define the number of qubits
+    n = 3
+    # define the number of iterations
+    m = 3
+    # define the backend
+    backend = Aer.get_backend('qasm_simulator')
+    # define the number of shots
+    shots = 1024
+    # run the search algorithm
+    counts = search(n, m, backend, shots)
+    return counts
 
 
 # call the main function
