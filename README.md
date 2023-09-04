@@ -1,0 +1,3 @@
+Grover's Search Algorithm is a quantum algorithm that is used to search an unstructured database. It can be used to find the location of a specific item among a large number of options significantly faster than classical algorithms. 
+The algorithm works by reflecting the amplitudes of the solution states about the mean amplitude, which causes the amplitude of the correct state to increase while the amplitudes of the incorrect states decrease. 
+This process is repeated until the correct state is found with high probability. Grover's algorithm is one of the most well-known quantum algorithms and has important applications in cryptography and machine learning.
